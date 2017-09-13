@@ -25,4 +25,10 @@ public class Player {
     public int getPosition() {
         return position;
     }
+
+    public void move(int diceResult){
+        int currentPosition = this.position;
+        this.setPosition(currentPosition + diceResult);
+    }
+
 }

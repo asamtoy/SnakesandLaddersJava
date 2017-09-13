@@ -53,8 +53,8 @@ public class Game {
     }
 
     private void movePlayer(int diceResult){
-        int currentPosition = currentPlayer.getPosition();
-        this.currentPlayer.setPosition(currentPosition + diceResult);
+        currentPlayer.move(diceResult);
+
     }
 
     private void checkIfSpecialTile(){
